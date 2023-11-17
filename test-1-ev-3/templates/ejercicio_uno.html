@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='ejercicios.css')}}">
+    <title>Ejericio 1 - EV3</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="/ejercicio1" method="POST">
+        <label for="mark-one">NOTA 1:</label> <br>
+        <input type="number" id="mark-one" name="note1" value="{{note1}}" required> <br>
+        <label for="mark-two">NOTA 2:</label> <br>
+        <input type="number" id="mark-two" name="note2" value="{{note2}}" required> <br>
+        <label for="mark-three">NOTA 3:</label> <br>
+        <input type="number" id="mark-three" name="note3" value="{{note3}}" required><br>
+        <label for="assistance-pcg">ASISTENCIA (%):</label> <br>
+        <input type="number" id="assistance-pcg" name="assistance" value="{{assistance}}" required><br>
+        {% if result is not none %}
+            <p>{{average}}</p>
+            <p>{{result}}</p>
+        {% else %}
+            <p></p>
+        {% endif %}
+        <input type="submit" value="ENVIAR">
+        </form>
+    </div>
+</body>
+</html>

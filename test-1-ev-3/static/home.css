@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffd8b1;
+}
+
+.contenedor-botones{
+    width: fit-content;
+    height: fit-content;
+    /*border-radius: 20px;*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ejercicio-uno, .ejercicio-dos{
+    width: 20vw;
+    height: 15vh;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: orange;
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.ejercicio-uno:hover,
+.ejercicio-dos:hover{
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.2);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

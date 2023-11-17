@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='ejercicios.css')}}">
+    <title>Ejercicio 2 - EV3</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="/ejercicio2" method="post">
+        <label for="name-one">NOMBRE 1:</label> <br>
+        <input type="text" id="name-one" name="nameone" value="{{nameone}}"> <br>
+        <label for="name-two">NOMBRE 2:</label> <br>
+        <input type="text" id="name-two" name="nametwo" value="{{nametwo}}"> <br>
+        <label for="name-three">NOMBRE 3:</label> <br>
+        <input type="text" id="name-three" name="namethree" value="{{namethree}}"><br>
+        <p>{{name_result}}</p>
+        <p>{{name_count}}</p>
+        <input type="submit" value="ENVIAR">
+        </form>
+    </div>
+
+</body>
+</html>
